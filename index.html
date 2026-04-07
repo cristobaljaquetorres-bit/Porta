@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Ramírez | Desarrollador Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navegación -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">&lt;DR /&gt;</a>
+      <ul class="nav__list">
+        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__greeting">¡Hola! Soy</p>
+        <h1 class="hero__title">Diego Ramírez</h1>
+        <p class="hero__subtitle">Desarrollador Web Full Stack</p>
+        <p class="hero__description">
+          Transformo ideas en experiencias digitales. Me especializo en crear
+          interfaces eficientes y código que sea un gusto mantener.
+        </p>
+        <div class="hero__ctas">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--secondary">Contactarme</a>
+        </div>
+      </div>
+      <div class="hero__decoration">
+        <pre class="hero__code"><code><span class="code-keyword">const</span> <span class="code-variable">dev</span> = {
+  <span class="code-property">nombre</span>: <span class="code-string">"Diego"</span>,
+  <span class="code-property">apellido</span>: <span class="code-string">"Ramírez"</span>,
+  <span class="code-property">rol</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-property">experiencia</span>: <span class="code-number">5</span>,
+  <span class="code-property">ubicacion</span>: <span class="code-string">"Santiago, CL"</span>
+};</code></pre>
+      </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="section" id="sobre-mi">
+      <h2 class="section__title">&lt;Sobre Mí&gt;</h2>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            Soy desarrollador con más de 5 años de experiencia construyendo
+            aplicaciones web. Empecé estudiando Ingeniería en Computación en la Universidad de Chile y desde
+            entonces no dejo de aprender.
+          </p>
+          <p>
+            Mi enfoque prioriza la calidad del código y la experiencia del
+            usuario. Creo firmemente que un buen desarrollo empieza entendiendo
+            el problema antes de escribir la primera línea.
+          </p>
+        </div>
+        <div class="about__image">
+          <div class="about__avatar">
+            <span class="about__initials">DR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section" id="proyectos">
+      <h2 class="section__title">&lt;Proyectos&gt;</h2>
+      <div class="projects" id="projects-container">
+        <!-- Los proyectos se renderizan via JS -->
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2 class="section__title">&lt;Skills&gt;</h2>
+      <div class="skills" id="skills-container">
+        <!-- Las skills se renderizan via JS -->
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+      <h2 class="section__title">&lt;Contacto&gt;</h2>
+      <div class="contact">
+        <p class="contact__text">
+          ¿Tenés un proyecto en mente? ¿Querés trabajar juntos? Escribime y te contesto dentro de las 24 horas.
+        </p>
+        <form class="contact__form" id="contact-form">
+          <div class="form-group">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="form-input form-input--textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+        </form>
+        <div class="contact__info">
+          <a href="mailto:diego@ejemplo.cl" class="contact__link">📧 diego@ejemplo.cl</a>
+          <a href="https://github.com/diegoramirez" target="_blank" rel="noopener" class="contact__link">🐙 GitHub</a>
+          <a href="https://linkedin.com/in/diegoramirez" target="_blank" rel="noopener" class="contact__link">💼 LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Diseñado y desarrollado por Diego Ramírez</p>
+    <p class="footer__year">2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
